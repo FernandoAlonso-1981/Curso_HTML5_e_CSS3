@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex010/vovo.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(-45deg, rgb(186, 185, 185), rgb(152, 152, 152));
+            background-attachment: fixed;
+            margin: 0px;
+        }
+
+        h1 {
+            color: #79239D;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.364);
+            padding: 0px 10px 0px 10px ;
+        }
+
+        h2 {
+            color: #79239D;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.364);
+        }
+
+        header {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: #A852B5;
+            padding: 3px 10px 3px 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.364);
+            border-radius: 10px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #B2D7C1;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article{
+            background-color: #ecf7f0;
+            padding: 10px;
+            text-align: justify;
+            border-radius: 10px;
+        }
+
+        article > aside {
+            background-color: #A852B5;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.364); 
+            border-radius: 10px;
+        }
+
+        aside > p {
+            margin: 0px;
+        }
+
+        footer {
+            background-color: #79239D;
+            color:white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Notícas de última hora</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione dicta illo nulla quibusdam, minus sed cum facilis provident pariatur expedita non odit qui culpa saepe vero maiores sapiente nobis!</p>
+                <aside>
+                    <p>Escrito por Fernando.</p>
+                </aside>
+            </article>
+        </section>
+        <section id="assuntos">
+            <article>
+                <h2>Principais assuntos do dia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione dicta illo nulla quibusdam, minus sed cum facilis provident pariatur expedita non odit qui culpa saepe vero maiores sapiente nobis!</p>
+                <aside>
+                    <p>Escrito por Fernando.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Vovô Soluções!</p>
+    </footer>
+
+</body>
+</html>

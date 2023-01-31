@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex010/vovo.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    
+    <h1>Insreindo vídeos hospedado localmente</h1>
+    
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    
+    <p>Vídeo com TAG simples (audio)</p>
+
+    <video src="midia/meuvideo.mp4" poster="imagens/poster1-min.jpg" width="500" controls></video>
+
+    <p>Video com TAG (video source) = </p>
+
+    <video poster="imagens/poster2-min.jpg" width="500" controls loop>
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <source src="midia/meuvideo.m4v" type="video/m4v">
+        <source src="midia/meuvideo.webm" type="video/webm">
+        <source src="midia/meuvideo.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com vídeos</p>
+    </video>
+
+    <h1>Insreindo vídeos do Youtube</h1>
+
+    <iframe 
+        width="500" height="315" src="https://www.youtube.com/embed/VP1jyAnLHWg"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+
+    <p>Vídeo Vimeo Com a TAG (div) adpatando ao tamanho da tela</p>
+
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
+            src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=c9ff23&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <script
+        src="https://player.vimeo.com/api/player.js">
+    </script>
+
+    <p>Vídeo Vimeo sem a TAG (div) com tamanho 500 px</p>
+
+    <iframe
+        src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=c9ff23&title=0&byline=0&portrait=0"
+        width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+    </iframe>
+
+<meta name='robots' content='noindex, follow' />
+
+<meta name="robots" content="in">
+   
+    
+</body>
+</html>
