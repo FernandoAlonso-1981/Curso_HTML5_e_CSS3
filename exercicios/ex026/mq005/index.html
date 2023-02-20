@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="../../ex010/vovo.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -29,12 +30,24 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi fugiat beatae neque voluptas. Tempore dolorum aliquid in animi officia aliquam fuga, molestias assumenda excepturi quibusdam possimus harum voluptatem dolores.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa quia. Ex at pariatur iure? Illum doloremque a ullam ratione ipsam, non eos aspernatur voluptatibus quaerat praesentium facere doloribus cumque.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum impedit unde est, consequuntur at ipsa aliquam laboriosam harum asperiores natus perspiciatis neque recusandae illum soluta magni veniam quis nesciunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque delectus iusto aliquam molestias molestiae dolorum, odit nostrum non ducimus fugit sed eum exercitationem? Fugiat recusandae voluptate quam nostrum! Impedit, debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, alias blanditiis temporibus hic molestiae ipsam? Placeat alias cum consectetur unde praesentium, ut, omnis inventore repellendus quibusdam sed hic? Incidunt, placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi fugiat beatae neque voluptas. Tempore dolorum aliquid in animi officia aliquam fuga, molestias assumenda excepturi quibusdam possimus harum voluptatem dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae modi eos expedita quis ducimus provident voluptatum, corrupti sunt ea consequuntur doloremque ratione nemo neque optio quas deleniti fugit fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa quia. Ex at pariatur iure? Illum doloremque a ullam ratione ipsam, non eos aspernatur voluptatibus quaerat praesentium facere doloribus cumque.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, corporis! Aperiam in omnis dignissimos id, sit dolores. Aut eligendi odio obcaecati repellendus atque sunt, vero blanditiis ipsam voluptatibus fugiat necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolores impedit. Maiores, culpa eos consequuntur ea est assumenda, blanditiis ipsam nulla ipsum qui fugiat consequatur tenetur obcaecati molestias laboriosam tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum impedit unde est, consequuntur at ipsa aliquam laboriosam harum asperiores natus perspiciatis neque recusandae illum soluta magni veniam quis nesciunt?</p>
         </article>
     </main>
 
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                intes.style.display = 'block'
+            } else {
+                intes.style.display = 'none'
+            }
+            
+        }
+
+    </script>
+    
     <script>
         function clickMenu() {
             if (itens.style.display == 'block') {
